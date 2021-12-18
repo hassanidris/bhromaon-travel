@@ -211,19 +211,9 @@ a {
   position: relative;
   width: 40%;
 }
-.choose__image--first {
-  position: absolute;
-  width: 200px;
-  height: auto;
-  top: 0;
-  left: 100px;
-}
 .choose__image--second {
-  position: absolute;
-  width: 200px;
-  height: auto;
-  top: -135px;
-  left: 0;
+  margin-top: 1em;
+  margin-left: 2em;
 }
 
 /* ======= Media Queries =========== */
@@ -243,6 +233,7 @@ a {
   }
   .banner__search button {
     width: 150px;
+    margin-top: 0.5em;
   }
 
   .choose {
@@ -256,39 +247,8 @@ a {
     width: 100%;
     text-align: center;
   }
-  .choose__content--title {
-    font-size: var(--fs-600);
-    font-family: var(--ff-aleo);
-  }
-  .choose__content p {
-    margin-bottom: 1.5em;
-  }
-  .choose__content--explore {
-    background-color: hsl(var(--clr-royalBlue));
-    border: 0;
-    color: hsl(var(--clr-white));
-    padding: 1em 5em;
-  }
-  .choose__content--explore:hover {
-    background-color: hsl(var(--clr-nero));
-  }
-  .choose__image {
-    position: relative;
-    width: 40%;
-  }
-  .choose__image--first {
-    position: absolute;
-    width: 200px;
-    height: auto;
-    top: 0;
-    left: 100px;
-  }
   .choose__image--second {
-    position: absolute;
-    width: 200px;
-    height: auto;
-    top: -135px;
-    left: 0;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -307,32 +267,22 @@ a {
   }
   .banner__search button {
     width: 70px;
+    margin-top: 0.5em;
   }
 
   .choose {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 3em 10em;
+    padding: 3em 2em;
     gap: var(--gap, 3em);
   }
-  .choose__image {
-    position: relative;
-    width: 40%;
-  }
-  .choose__image--first {
-    position: absolute;
-    width: 200px;
-    height: auto;
-    top: 0;
-    left: 100px;
+  .choose__content {
+    width: 100%;
+    text-align: center;
   }
   .choose__image--second {
-    position: absolute;
-    width: 200px;
-    height: auto;
-    top: -135px;
-    left: 0;
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

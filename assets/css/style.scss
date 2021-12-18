@@ -244,19 +244,9 @@
             position: relative;
             width: 40%;
             
-            &--first {
-              position: absolute;
-              width: 200px;
-              height: auto;
-              top: 0;
-              left: 100px;
-            }
             &--second {
-              position: absolute;
-              width: 200px;
-              height: auto;
-              top: -135px;
-              left: 0;
+             margin-top: 1em;
+              margin-left: 2em;
             }
 
             
@@ -286,6 +276,7 @@
 
         button {
           width: 150px;
+          margin-top: .5em;
         }
       }
     }
@@ -298,48 +289,15 @@
 
       &__content {
         width: 100%;
-        text-align: center;
-
-        &--title {
-          font-size: var(--fs-600);
-          font-family: var(--ff-aleo);
-        }
-
-        p {
-          // width: 90%;
-          margin-bottom: 1.5em;
-        }
-
-        &--explore {
-          background-color: hsl(var(--clr-royalBlue));
-          border: 0;
-          color: hsl(var(--clr-white));
-          padding: 1em 5em;
-        }
-
-        &--explore:hover {
-          background-color: hsl(var(--clr-nero));
-        }
+        text-align: center; 
       }
         
       &__image {
-        position: relative;
-        width: 40%;
+        // width: 50%;
         
-      &--first {
-          position: absolute;
-          width: 200px;
-          height: auto;
-          top: 0;
-          left: 100px;
-        }
-      &--second {
-          position: absolute;
-          width: 200px;
-          height: auto;
-          top: -135px;
-          left: 0;
-        }
+        &--second {
+            margin-left: 0;
+          }
       }
     }
     
@@ -366,6 +324,7 @@
 
       button {
         width: 70px;
+        margin-top: .5em;
       }
 
     }
@@ -373,29 +332,22 @@
 
   .choose {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 3em 10em;
+    padding: 3em 2em;
     gap: var(--gap, 3em);
+
+    &__content {
+      width: 100%;
+      text-align: center; 
+    }
       
     &__image {
-      position: relative;
-      width: 40%;
+      // width: 50%;
       
-    &--first {
-        position: absolute;
-        width: 200px;
-        height: auto;
-        top: 0;
-        left: 100px;
-      }
-    &--second {
-        position: absolute;
-        width: 200px;
-        height: auto;
-        top: -135px;
-        left: 0;
-      }
+      &--second {
+          margin-left: 0;
+        }
     }
   }
 }
