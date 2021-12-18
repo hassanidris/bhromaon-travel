@@ -210,12 +210,17 @@ a {
   margin-bottom: 1.5em;
 }
 .choose__image {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap, 1em);
   width: 40%;
 }
+.choose__image--first {
+  width: 250px;
+}
 .choose__image--second {
-  margin-top: 1em;
-  margin-left: 2em;
+  width: 250px;
+  margin-left: 2.5em;
 }
 
 /* --------- First Booking Block -------- */
@@ -251,6 +256,41 @@ a {
   flex-direction: row-reverse;
 }
 
+/* --------- Tourist Block -------- */
+.tourist-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/tourist_bg_img.png");
+  padding: 5em 8em;
+}
+.tourist-block__title {
+  font-size: var(--fs-600);
+  font-family: var(--ff-aleo);
+  line-height: 3;
+}
+
+.tourist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--clr-nero)/0.9);
+}
+.tourist__content {
+  width: 60%;
+  padding: 2em;
+}
+.tourist__content--subtitle {
+  font-size: var(--fs-300);
+  text-transform: uppercase;
+  font-family: var(--ff-josefinSans);
+}
+.tourist__content--desc {
+  font-size: var(--fs-200);
+  font-family: var(--ff-josefinSans);
+}
+
 /* ======= Media Queries =========== */
 @media screen and (max-width: 900px) {
   .nav {
@@ -282,8 +322,17 @@ a {
     width: 100%;
     text-align: center;
   }
+  .choose__image {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .choose__image--first {
+    width: 300px;
+  }
   .choose__image--second {
     margin-left: 0;
+    width: 300px;
   }
 
   .first-booking {
@@ -322,6 +371,17 @@ a {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .tourist {
+    flex-direction: column;
+  }
+  .tourist__content {
+    width: 100%;
+    padding: 2em;
+  }
+  .tourist__content--subtitle {
+    text-align: center;
   }
 }
 @media screen and (max-width: 480px) {
@@ -394,6 +454,17 @@ a {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .tourist {
+    flex-direction: column;
+  }
+  .tourist__content {
+    width: 100%;
+    padding: 2em;
+  }
+  .tourist__content--subtitle {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
