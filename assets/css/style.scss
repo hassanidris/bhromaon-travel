@@ -80,10 +80,7 @@
   //     margin: 2em 0;
   // }
   
-  /* make form elements easier to work with */
-  section {
-    margin: 3.5em 0;
-  }
+  
   
   /* ------------------- */
   /* Utility classes     */
@@ -208,31 +205,147 @@
     }
 
 
+        /* --------- Choose Section -------- */
+
+        .choose {
+          background-image: url(../img/choose_bg_img.png);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 3em 10em;
+          gap: var(--gap, 3em);
+
+          &__content {
+            width: 50%;
+
+            &--title {
+              font-size: var(--fs-600);
+              font-family: var(--ff-aleo);
+            }
+
+            p {
+              width: 90%;
+              margin-bottom: 1.5em;
+            }
+
+            &--explore {
+              background-color: hsl(var(--clr-royalBlue));
+              border: 0;
+              color: hsl(var(--clr-white));
+              padding: 1em 5em;
+            }
+
+            &--explore:hover {
+              background-color: hsl(var(--clr-nero));
+            }
+          }
+
+          &__image {
+            position: relative;
+            width: 40%;
+            
+            &--first {
+              position: absolute;
+              width: 200px;
+              height: auto;
+              top: 0;
+              left: 100px;
+            }
+            &--second {
+              position: absolute;
+              width: 200px;
+              height: auto;
+              top: -135px;
+              left: 0;
+            }
+
+            
+          }
+        }
+
+
+
+
+/* ======= Media Queries =========== */
+
+
     @media screen and (max-width: 787px) {
       .nav {
         padding: 0 2em;
         order: -1;
       }
       .banner {
-    &__search {
+        &__search {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+        input {
+          width: 300px;
+        }
+
+        button {
+          width: 150px;
+        }
+      }
+    }
+    .choose {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 3em 2em;
+      gap: var(--gap, 3em);
 
-      input {
-        width: 300px;
+      &__content {
+        width: 100%;
+        text-align: center;
+
+        &--title {
+          font-size: var(--fs-600);
+          font-family: var(--ff-aleo);
+        }
+
+        p {
+          // width: 90%;
+          margin-bottom: 1.5em;
+        }
+
+        &--explore {
+          background-color: hsl(var(--clr-royalBlue));
+          border: 0;
+          color: hsl(var(--clr-white));
+          padding: 1em 5em;
+        }
+
+        &--explore:hover {
+          background-color: hsl(var(--clr-nero));
+        }
       }
-
-      button {
-        width: 150px;
+        
+      &__image {
+        position: relative;
+        width: 40%;
+        
+      &--first {
+          position: absolute;
+          width: 200px;
+          height: auto;
+          top: 0;
+          left: 100px;
+        }
+      &--second {
+          position: absolute;
+          width: 200px;
+          height: auto;
+          top: -135px;
+          left: 0;
+        }
       }
-
     }
+    
   }
-    }
 
 
-/* ======= */
 
 @media screen and (max-width: 480px) {
   .nav {
@@ -255,6 +368,34 @@
         width: 70px;
       }
 
+    }
+  }
+
+  .choose {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 10em;
+    gap: var(--gap, 3em);
+      
+    &__image {
+      position: relative;
+      width: 40%;
+      
+    &--first {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        top: 0;
+        left: 100px;
+      }
+    &--second {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        top: -135px;
+        left: 0;
+      }
     }
   }
 }
