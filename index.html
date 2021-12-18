@@ -35,20 +35,15 @@
         <div class="nav__logo">
           <img src="assets/img/Bhromaon.svg" alt="Bhronmaon Logo" />
         </div>
-        <ul class="nav__list">
-          <li class="nav__list">
-            <a href="" class="nav__link">Who We Are</a>
-          </li>
-          <li class="nav__list">
-            <a href="" class="nav__link">What We Do</a>
-          </li>
-          <li class="nav__list">
-            <a href="" class="nav__link">Travel With Us</a>
-          </li>
-          <li class="nav__list">
-            <a href="" class="nav__link">Contact Us</a>
-          </li>
-        </ul>
+        <div class="nav__topnav" id="myTopnav">
+          <a href="#">Who We Are</a>
+          <a href="#">What We Do</a>
+          <a href="#">Travel With Us</a>
+          <a href="#">Contact Us</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
       </nav>
       <div class="banner">
         <h1 class="banner__title">Bhromaon</h1>
@@ -116,5 +111,16 @@
         <button type="submit" class="section-btn">Book Now</button>
       </article>
     </section>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "nav__topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav__topnav";
+        }
+      }
+    </script>
   </body>
 </html>
