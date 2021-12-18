@@ -92,6 +92,18 @@
     margin-inline: auto;
     max-width: 75rem;
   }
+
+  .section-btn {
+    background-color: hsl(var(--clr-royalBlue));
+    border: 0;
+    color: hsl(var(--clr-white));
+    padding: 1em 5em;
+    margin-top: 1em;
+  }
+
+  .section-btn:hover {
+    background-color: hsl(var(--clr-nero));
+  }
   
   
 
@@ -227,17 +239,6 @@
               width: 90%;
               margin-bottom: 1.5em;
             }
-
-            &--explore {
-              background-color: hsl(var(--clr-royalBlue));
-              border: 0;
-              color: hsl(var(--clr-white));
-              padding: 1em 5em;
-            }
-
-            &--explore:hover {
-              background-color: hsl(var(--clr-nero));
-            }
           }
 
           &__image {
@@ -252,6 +253,45 @@
             
           }
         }
+
+        /* --------- First Booking Block -------- */
+
+        .first-booking {
+          background-image: url("../img/spain_img1.png");
+          padding: 3em 10em;
+          display: flex;
+        }
+
+        .spain-block {
+          background-color: hsl(var(--clr-nero) / .9);
+          padding: 2em;
+          width: 40%;
+
+          &__text {
+            font-size: var(--fs-300);
+            font-family: var(--ff-josefinSans);
+          }
+
+          &__title {
+            font-size: var(--fs-300);
+            font-family: var(--ff-josefinSans);
+            text-transform: uppercase;
+          }
+
+          &__desc {
+            font-size: var(--fs-200);
+          }
+        }
+
+        /* --------- second Booking Block -------- */
+
+        .second-booking {
+          background-image: url("../img/spain_img2.png");
+          padding: 3em 10em;
+          display: flex;
+          flex-direction: row-reverse;
+        }
+
 
 
 
@@ -299,6 +339,19 @@
             margin-left: 0;
           }
       }
+    }
+
+    .first-booking {
+      padding: 3em 4em;
+    }
+
+    .second-booking {
+      padding: 3em 4em;
+    }
+
+    .spain-block {
+      width: 100%;
+      text-align: center;
     }
     
   }
@@ -349,6 +402,18 @@
           margin-left: 0;
         }
     }
+  }
+  .first-booking {
+    padding: 3em 4em;
+  }
+
+  .second-booking {
+    padding: 3em 4em;
+  }
+
+  .spain-block {
+    width: 100%;
+    text-align: center;
   }
 }
  

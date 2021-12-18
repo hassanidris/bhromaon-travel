@@ -84,6 +84,18 @@ a {
   max-width: 75rem;
 }
 
+.section-btn {
+  background-color: hsl(var(--clr-royalBlue));
+  border: 0;
+  color: hsl(var(--clr-white));
+  padding: 1em 5em;
+  margin-top: 1em;
+}
+
+.section-btn:hover {
+  background-color: hsl(var(--clr-nero));
+}
+
 /* ---------- Header Section ------------- */
 .header {
   min-height: 100vh;
@@ -198,15 +210,6 @@ a {
   width: 90%;
   margin-bottom: 1.5em;
 }
-.choose__content--explore {
-  background-color: hsl(var(--clr-royalBlue));
-  border: 0;
-  color: hsl(var(--clr-white));
-  padding: 1em 5em;
-}
-.choose__content--explore:hover {
-  background-color: hsl(var(--clr-nero));
-}
 .choose__image {
   position: relative;
   width: 40%;
@@ -214,6 +217,39 @@ a {
 .choose__image--second {
   margin-top: 1em;
   margin-left: 2em;
+}
+
+/* --------- First Booking Block -------- */
+.first-booking {
+  background-image: url("../img/spain_img1.png");
+  padding: 3em 10em;
+  display: flex;
+}
+
+.spain-block {
+  background-color: hsl(var(--clr-nero)/0.9);
+  padding: 2em;
+  width: 40%;
+}
+.spain-block__text {
+  font-size: var(--fs-300);
+  font-family: var(--ff-josefinSans);
+}
+.spain-block__title {
+  font-size: var(--fs-300);
+  font-family: var(--ff-josefinSans);
+  text-transform: uppercase;
+}
+.spain-block__desc {
+  font-size: var(--fs-200);
+}
+
+/* --------- second Booking Block -------- */
+.second-booking {
+  background-image: url("../img/spain_img2.png");
+  padding: 3em 10em;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 /* ======= Media Queries =========== */
@@ -250,6 +286,19 @@ a {
   .choose__image--second {
     margin-left: 0;
   }
+
+  .first-booking {
+    padding: 3em 4em;
+  }
+
+  .second-booking {
+    padding: 3em 4em;
+  }
+
+  .spain-block {
+    width: 100%;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 480px) {
   .nav {
@@ -283,6 +332,19 @@ a {
   }
   .choose__image--second {
     margin-left: 0;
+  }
+
+  .first-booking {
+    padding: 3em 4em;
+  }
+
+  .second-booking {
+    padding: 3em 4em;
+  }
+
+  .spain-block {
+    width: 100%;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
