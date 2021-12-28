@@ -359,6 +359,7 @@ a {
 
   .nav__topnav.responsive {
     position: relative;
+    padding-top: 4em;
   }
 
   .nav__topnav.responsive .icon {
@@ -442,6 +443,7 @@ a {
 
   .nav__topnav.responsive {
     position: relative;
+    padding-top: 4em;
   }
 
   .nav__topnav.responsive .icon {

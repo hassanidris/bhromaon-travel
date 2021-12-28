@@ -412,7 +412,7 @@
       float: right;
       display: block;
     }
-    .nav__topnav.responsive {position: relative;}
+    .nav__topnav.responsive {position: relative; padding-top: 4em;}
     .nav__topnav.responsive .icon {
       position: absolute;
       right: 0;
@@ -422,6 +422,7 @@
       float: none;
       display: block;
       text-align: left;
+      
     }
 
     .tourist {
@@ -504,7 +505,10 @@
       float: right;
       display: block;
     }
-    .nav__topnav.responsive {position: relative;}
+    .nav__topnav.responsive {
+      position: relative;
+      padding-top: 4em;
+    }
     .nav__topnav.responsive .icon {
       position: absolute;
       right: 0;
@@ -514,6 +518,7 @@
       float: none;
       display: block;
       text-align: left;
+      
     }
 
     .tourist {
