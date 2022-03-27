@@ -35,20 +35,15 @@
         <div class="nav__logo">
           <img src="assets/img/Bhromaon.svg" alt="Bhronmaon Logo" />
         </div>
-        <ul class="nav__list">
-          <li class="nav__list">
-            <a href="" class="nav__link">Who We Are</a>
-          </li>
-          <li class="nav__list">
-            <a href="" class="nav__link">What We Do</a>
-          </li>
-          <li class="nav__list">
-            <a href="" class="nav__link">Travel With Us</a>
-          </li>
-          <li class="nav__list">
-            <a href="" class="nav__link">Contact Us</a>
-          </li>
-        </ul>
+        <div class="nav__topnav" id="myTopnav">
+          <a href="#">Who We Are</a>
+          <a href="#">What We Do</a>
+          <a href="#">Travel With Us</a>
+          <a href="#">Contact Us</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
       </nav>
       <div class="banner">
         <h1 class="banner__title">Bhromaon</h1>
@@ -65,5 +60,86 @@
         </form>
       </div>
     </header>
+    <section class="choose">
+      <div class="choose__content">
+        <h2 class="choose__content--title">Why Choose Us</h2>
+        <p>
+          Tion and dislike men who are so beguiled and demoralized by desire by
+          the charms of pleasure of the moment, so blinded by desire, that they
+          cannot foresee
+        </p>
+        <p>
+          Ddislike men who are so beguiled and demoralized by the charms of
+          pleasure of the moment, so blinded by desire, that.
+        </p>
+        <button type="submit" class="section-btn">Explore Places</button>
+      </div>
+      <div class="choose__image">
+        <img
+          src="assets/img/choose_img1.png"
+          alt="Beach"
+          class="choose__image--first"
+        />
+        <img
+          src="assets/img/choose_img2.png"
+          alt="mountain"
+          class="choose__image--second"
+        />
+      </div>
+    </section>
+    <section class="first-booking">
+      <article class="first-booking__block spain-block">
+        <h4 class="spain-block__text">Spain</h4>
+        <h3 class="spain-block__title">Grand Spain Madrid</h3>
+        <p class="spain-block__desc">
+          But I must explain to you how all this mistaken idea of account to
+          denouncing pleasure and praising pain was account born and I account
+          will give you a complete account of the system
+        </p>
+        <button type="submit" class="section-btn">Book Now</button>
+      </article>
+    </section>
+    <section class="second-booking">
+      <article class="second-booking__block spain-block">
+        <h4 class="spain-block__text">Spain</h4>
+        <h3 class="spain-block__title">Grand Spain Madrid</h3>
+        <p class="spain-block__desc">
+          But I must explain to you how all this mistaken idea of account to
+          denouncing pleasure and praising pain was account born and I account
+          will give you a complete account of the system
+        </p>
+        <button type="submit" class="section-btn">Book Now</button>
+      </article>
+    </section>
+    <section class="tourist-block">
+      <h2 class="tourist-block__title">What Our Tourist Say</h2>
+      <article class="tourist-block__article tourist">
+        <div class="tourist__image">
+          <img src="assets/img/tourist_img.png" alt="Seeing Mountian" />
+        </div>
+        <div class="tourist__content">
+          <h2 class="tourist__content--subtitle">Sam Sumon</h2>
+          <p class="tourist__content--desc">
+            But I must explain to you how all this mistaken idea of account to
+            denouncinpleasure and praising pain But I must explain to you how
+            all this mistaken idea of account to nai denouncing pleasure and
+            praising pain was account born and I account will give you a
+            complete account of the system was account born and I account will
+            give you a nai the complete account of the system
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "nav__topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav__topnav";
+        }
+      }
+    </script>
   </body>
 </html>
